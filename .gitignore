@@ -1,0 +1,85 @@
+# -------------------------
+# FICHIERS TEMPORAIRES & SYSTÈME
+# -------------------------
+*.DS_Store
+Thumbs.db
+
+# -------------------------
+# .NET / C# - BACKEND
+# -------------------------
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+.vs/
+
+# Logs
+*.log
+
+# Build results
+*.dll
+*.exe
+*.app
+*.pdb
+
+# Rider / JetBrains
+.idea/
+
+# ASP.NET secrets
+secrets.json
+
+# -------------------------
+# ENV FILES
+# -------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# -------------------------
+# NEXT.JS - FRONTEND
+# -------------------------
+.next/
+out/
+node_modules/
+
+# -------------------------
+# DOCKER / BDD
+# -------------------------
+docker-compose.override.yml
+docker-data/
+postgres_data/
+
+# -------------------------
+# TESTS & COVERAGE
+# -------------------------
+coverage/
+*.lcov
+
+# -------------------------
+# OSIRUS - IGNORE TEMPORAIRES CUSTOM
+# -------------------------
+*.bak
+*.tmp
+*.old
+*.swp
+*~
+
+# -------------------------
+# FICHIERS GÉNÉRÉS
+# -------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# -------------------------
+# GIT EXCEPTIONS (si nécessaire)
+# !.env.example

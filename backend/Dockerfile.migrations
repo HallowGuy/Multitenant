@@ -1,0 +1,13 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+
+WORKDIR /src
+COPY backend/Multitenant.Api/*.csproj ./Multitenant.Api/
+RUN dotnet restore ./Multitenant.Api/Multitenant.Api.csproj
+
+COPY backend/Multitenant.Api ./Multitenant.Api
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
+
+WORKDIR /src/Multitenant.Api
+
+CMD ["/bin/bash"]
