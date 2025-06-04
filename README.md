@@ -42,6 +42,9 @@ Lancer les services :
 
 
 docker-compose up --build
+Avant de démarrer, copiez le fichier `.env.example` vers `.env` et ajustez la variable
+`ConnectionStrings__DefaultConnection`. Le backend lit **uniquement** cette
+variable d'environnement pour se connecter à PostgreSQL.
 Accès :
 
 API Backend (.NET) : http://localhost:5000

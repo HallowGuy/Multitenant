@@ -4,9 +4,11 @@ using Multitenant.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Ajouter la configuration de PostgreSQL
+// Ajouter la configuration de PostgreSQL depuis les variables d'environnement
+var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection")
+    ?? throw new InvalidOperationException("Connection string not configured");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
 
 // Autres services
 builder.Services.AddControllers();
