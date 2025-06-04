@@ -82,6 +82,11 @@ Tracer les appels API et erreurs
 
 Créer des dashboards par tenant
 
+### Voir les logs dans Kibana
+1. Démarrer les services Elastic et Kibana (voir `docker-compose` ou votre infrastructure Elastic).
+2. Ouvrir Kibana sur [http://localhost:5601](http://localhost:5601).
+3. Accéder au menu **Discover** et sélectionner l'index `multitenant-api-*` pour consulter les événements Serilog.
+
 📋 À faire
  Ajouter l’authentification (JWT ou Keycloak)
 
