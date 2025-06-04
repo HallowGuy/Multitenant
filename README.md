@@ -52,6 +52,8 @@ PostgreSQL : localhost:5432, utilisateur dev, mot de passe devpass
 
 Kibana : http://localhost:5601
 
+Swagger UI : http://localhost:5000/swagger
+
 🗂️ Fonctionnalité multitenant
 Le système repose sur :
 
