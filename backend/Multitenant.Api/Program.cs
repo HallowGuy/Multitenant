@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Multitenant.Api.Data;
+using Multitenant.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 // Configuration du pipeline HTTP
+app.UseMiddleware<TenantResolverMiddleware>();
 app.MapControllers();
 
 app.Run();

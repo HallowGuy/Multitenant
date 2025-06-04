@@ -59,6 +59,11 @@ Un middleware .NET (TenantResolverMiddleware) qui extrait un identifiant de tena
 
 un sous-domaine, un header, ou un jeton JWT
 
+Pour tester l'application vous pouvez :
+* renseigner l'en-tête `X-Tenant-Id` dans vos requêtes HTTP
+* utiliser un nom de domaine de la forme `tenant.votreapp.local`
+* ou fournir un token JWT contenant la claim `tenant_id`
+
 Toutes les requêtes vers la base sont automatiquement filtrées avec le TenantId
 
 L’authentification et les droits peuvent être étendus par tenant
