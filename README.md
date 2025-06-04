@@ -62,6 +62,7 @@ un sous-domaine, un header, ou un jeton JWT
 Toutes les requêtes vers la base sont automatiquement filtrées avec le TenantId
 
 L’authentification et les droits peuvent être étendus par tenant
+La longueur du champ `Name` des tenants est limitée à 100 caractères.
 
 🛠 Environnement de développement
 Pour reconstruire un service :
