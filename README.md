@@ -42,6 +42,9 @@ Lancer les services :
 
 
 docker-compose up --build
+Le conteneur backend applique automatiquement les migrations EF Core en exécutant
+`dotnet ef database update`. Si vous lancez l'API manuellement, exécutez cette
+commande pour mettre à jour le schéma avant de démarrer l'application.
 Accès :
 
 API Backend (.NET) : http://localhost:5000
