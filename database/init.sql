@@ -7,7 +7,7 @@ CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 -- 2. Création de la table "Tenants"
 CREATE TABLE IF NOT EXISTS "Tenants" (
   "Id" UUID PRIMARY KEY,
-  "Name" TEXT NOT NULL,
+  "Name" VARCHAR(100) NOT NULL,
   "CreatedAt" TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
