@@ -16,11 +16,6 @@ Ce projet sert de couche d'abstraction **multitenant** pour une application init
 ├── observability/ → Elastic + Kibana pour les dashboards
 ├── docker-compose.yml
 ├── README.md
-
-yaml
-Copier
-Modifier
-
 ---
 
 ## 🚀 Démarrage rapide
@@ -38,10 +33,11 @@ Modifier
 ```bash
 git clone https://votre-repo-git.git
 cd my-multitenant-wrapper
+```
 Lancer les services :
-
-
+```bash
 docker-compose up --build
+```
 Accès :
 
 API Backend (.NET) : http://localhost:5000
